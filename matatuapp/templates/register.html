@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<form action="" method="post">
+<div class="row">
+<div class="col col-md-3"></div>
+<div class="col col-md-6">
+<div class="table">
+{{user_form.as_p}}
+</div>
+<div class="table">
+{{passager_form.as_p}}
+
+{%csrf_token%}
+<input type="submit" value="Create Account" class="btn btn-primary">
+</div>
+</form>
+</div>
+</div>
+{% endblock %}
